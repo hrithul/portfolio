@@ -27,7 +27,6 @@ a,
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -39,10 +38,12 @@ nav {
   height: 17vh;
 }
 
+
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+
 }
 
 a {
@@ -287,11 +288,6 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
 
 .details-container {
   padding: 1.5rem;
@@ -333,6 +329,14 @@ section {
   flex-direction: column;
 }
 
+.article-container-e {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 .article-container {
   display: flex;
   text-align: initial;
@@ -340,6 +344,9 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+}
+.article-container-e>article{
+  width: auto;
 }
 
 article {

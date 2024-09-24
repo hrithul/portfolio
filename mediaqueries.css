@@ -11,7 +11,7 @@
     height: fit-content;
   }
   
-
+}
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -52,10 +52,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    /* height: 40vh; */
-  }
+  /* #contact,footer {
+    height: 40vh;
+  } */
   #profile {
     height: 83vh;
     margin-bottom: 0;
@@ -113,4 +112,3 @@
   }
 }
 
-}
