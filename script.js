@@ -5,6 +5,8 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+
+
 window.onload = function() {
   // Listen for the form submission
   document.getElementById("contactForm").addEventListener("submit", function(event) {
@@ -12,16 +14,18 @@ window.onload = function() {
     event.preventDefault();
 
     // Get the values of form inputs
-    var name = document.getElementById("name").value.trim();
-    var email = document.getElementById("email").value.trim();
-    var message = document.getElementById("message").value.trim();
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
 
     // Regular expression for validating email
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+    let namePattern = /^[a-zA-Z]+$/;
 
     // Validate name field (required, at least 3 characters)
-    if (name === "" || name.length < 3) {
-      alert("Please enter a valid name (at least 3 characters).");
+    if (name === "" || name.length < 3 || !namePattern.test(name)) {
+      alert("Please enter a valid name (at least 3 characters with no special characters and numbers).");
       return;
     }
 
